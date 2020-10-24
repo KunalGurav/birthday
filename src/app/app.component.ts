@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
       this.isCountDownFinished = true;
     } else {
       this.startCountDown(this.startDate);
+      this.isCountDownFinished = false;
     }
   }
 

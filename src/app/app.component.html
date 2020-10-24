@@ -4,8 +4,14 @@
     <div class="after"></div>
   </div>
 </div>
-<div class="full-screen">
+<div class="full-screen" *ngIf="!isCountDownFinished">
   <h3>Most Awaited Day of the year will be back in </h3>
   <h1 class="display-4">{{counter}}</h1>
   <h3>#BigDay</h3>
+</div>
+<div class="birthday" *ngIf="isCountDownFinished">
+  <h3 class="text-white">Happy Birthday</h3>
+  <h1 class="text-white">Entrepreneur</h1>
+  <h6 class="text-white">Wish all your dreams come true.</h6>
+  <a href="https://www.greetingsisland.com/ecard/p0nnxvj2jukk/en" class="btn btn-link text-white">Greetings here</a>
 </div>

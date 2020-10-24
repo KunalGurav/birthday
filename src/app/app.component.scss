@@ -11,6 +11,19 @@
   justify-content: center;
 }
 
+.birthday{
+  padding: 20px;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background: url("../assets/images/birthday_1.jpg") no-repeat center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
 .anime-container{
   margin:0;
   padding:0;

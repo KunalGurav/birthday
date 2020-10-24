@@ -8,9 +8,16 @@ import DateTimeFormat = Intl.DateTimeFormat;
 })
 export class AppComponent implements OnInit {
   counter: string;
+  isCountDownFinished: boolean;
+  startDate = new Date(2020, 9, 25, 0, 0, 0, 0);
 
   ngOnInit(): void {
-    this.startCountDown(new Date(2020, 9, 25, 0, 0, 0, 0));
+    // this.isCountDownFinished = true;
+    if (this.startDate.getTime() < Date.now()) {
+      this.isCountDownFinished = true;
+    } else {
+      this.startCountDown(this.startDate);
+    }
   }
 
   startCountDown(startDate: Date) {
